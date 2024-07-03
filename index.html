@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="/public/manifest.json">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Busca aquí tu película</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Ingrese la película que busca">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div id="results-container"></div>
+        <button id="show-favorites-button">Ver Favoritos</button>
+        <div id="favorites-container"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-movie-info"></div>
+        </div>
+    </div>
+    
+    <script src="funcion.js"></script>
+    <script src="service-worker-register.js"></script>
+</body>
+</html>
